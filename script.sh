@@ -23,7 +23,7 @@ echo $currentdate >> "date.txt"
 git add date.txt
 git commit -m 'Date and time'
 git push -u origin master
-git checkout -b NewBranch main
+git checkout -b NewBranch master
 appenddate=$(date +"%d-%m-%Y %T.%N %Z")
 echo "Append date is : $appenddate"
 echo $appenddate >> "date.txt"
