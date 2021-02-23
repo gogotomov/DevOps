@@ -17,12 +17,12 @@ cd /home/gogo/DevOps-Linux
 git status
 git add script.sh
 git commit -m 'First Commmit'
-git push -u origin main
+git push -u origin master
 echo "Current date is : $currentdate"
 echo $currentdate >> "date.txt"
 git add date.txt
 git commit -m 'Date and time'
-git push -u origin main
+git push -u origin master
 git checkout -b NewBranch main
 appenddate=$(date +"%d-%m-%Y %T.%N %Z")
 echo "Append date is : $appenddate"
